@@ -8,7 +8,7 @@
     "serve": "live-server --open=public --port=8080",
     "watch:js": "rollup -c -w",
     "build:autoprefixer": "postcss --use autoprefixer -o public/assets/css/app.css public/assets/css/app.css",
-    "build:cssnano": "cssnano public/assets/css/app.css public/assets/css/app.min.css",
+    "build:cssnano": "cssnano public/assets/css/app.css public/assets/css/app.css",
     "build": "npm-run-all --parallel build:autoprefixer build:cssnano",
     "dev": "npm-run-all --parallel serve watch:js"
   },

@@ -10,7 +10,7 @@ export default {
   entry: './src/app.js',
   plugins: [
     vue({
-      css: './public/app.css'
+      css: './public/assets/css/app.css'
     }),
     buble(),
     nodeResolve({
@@ -24,5 +24,5 @@ export default {
     }),
     uglify({}, minify)
   ],
-  dest: './public/app.js'
+  dest: './public/assets/js/app.js'
 }
