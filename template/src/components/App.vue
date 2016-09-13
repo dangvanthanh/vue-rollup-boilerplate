@@ -16,10 +16,6 @@ export default {
 </script>
 
 <style>
-html {
-  height: 100%:
-}
-
 body {
     display: flex;
     align-items: center;
@@ -30,7 +26,7 @@ body {
 
 #app {
     color: #444;
-    margin-top: -100px;
+    margin-top: 100px;
     max-width: 600px;
     font-family: Helvetica, sans-serif;
     text-align: center;
