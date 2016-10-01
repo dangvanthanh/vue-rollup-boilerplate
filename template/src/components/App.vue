@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="app">
     <img src="assets/images/logo.png">
     <h1>\{{ msg }}</h1>
   </div>
@@ -24,7 +24,7 @@ body {
     margin: 0;
 }
 
-#app {
+.app {
     color: #444;
     margin-top: 100px;
     max-width: 600px;
