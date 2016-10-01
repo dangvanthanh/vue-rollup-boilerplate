@@ -9,7 +9,7 @@
 export default {
   data () {
     return {
-      msg: 'Welcome to your Vue.js app!'
+      msg: 'Vue.js - The Progressive JavaScript Framework'
     }
   }
 }
@@ -30,5 +30,11 @@ body {
     max-width: 600px;
     font-family: Helvetica, sans-serif;
     text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+  padding: 0 .25em;
 }
 </style>
