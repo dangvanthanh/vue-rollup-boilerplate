@@ -24,7 +24,7 @@
     "rollup-plugin-node-globals": "^1.0.9",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1",
-    "rollup-plugin-vue": "^2.2.3",
+    "rollup-plugin-vue": "^2.2.5",
     "uglify-js": "^2.7.3",
     "rollup-watch": "^2.5.0",
     "autoprefixer": "^6.4.1",
