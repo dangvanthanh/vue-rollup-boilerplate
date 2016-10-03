@@ -1,4 +1,4 @@
-import Vue from 'vue/dist/vue'
+import Vue from 'vue'
 import App from './components/App.vue'
 
 const app = new Vue({

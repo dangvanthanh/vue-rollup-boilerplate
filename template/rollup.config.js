@@ -1,3 +1,4 @@
+import alias from 'rollup-plugin-alias'
 import vue from 'rollup-plugin-vue'
 import buble from 'rollup-plugin-buble'
 import nodeResolve from 'rollup-plugin-node-resolve'
@@ -9,6 +10,9 @@ export default {
   entry: './src/app.js',
   dest: './public/assets/js/app.js',
   plugins: [
+    alias({
+      vue: 'node_modules/vue/dist/vue.js'
+    }),
     vue({
       css: './public/assets/css/app.css'
     }),
