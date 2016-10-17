@@ -27,8 +27,8 @@ For more information see the [docs for vue-loader](http://vuejs.github.io/vue-lo
 
 You will likely need to do some tuning to suit your own needs:
 
-- Install additional libraries that you need such as vue-router, vue-resource, vuex, etc...
-- A little development server with live reload capability with [live-server](https://github.com/tapio/live-server).
+- Install additional libraries that you need such as [vue-router](https://github.com/vuejs/vue-router), [vue-resource](https://github.com/vuejs/vue-resource), [vuex](https://github.com/vuejs/vuex), etc...
+- A little development server with live reload capability with [rollup-plugin-serve](https://github.com/thgh/rollup-plugin-serve) and [rollup-plugin-livereload](https://github.com/thgh/rollup-plugin-livereload).
 
 ## Fork It And Make Your Own
 
