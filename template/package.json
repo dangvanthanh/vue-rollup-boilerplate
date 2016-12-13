@@ -12,7 +12,7 @@
     "dev": "cross-env NODE_ENV=development rollup -cw"
   },
   "dependencies": {
-    "vue": "^2.1.4"
+    "vue": "^2.1.5"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
@@ -20,7 +20,7 @@
     "cssnano-cli": "^1.0.4",
     "npm-run-all": "^3.1.2",
     "postcss-cli": "^2.6.0",
-    "rollup": "^0.36.4",
+    "rollup": "^0.37.0",
     "rollup-plugin-alias": "^1.2.0",
     "rollup-plugin-buble": "^0.14.0",
     "rollup-plugin-commonjs": "^5.0.4",
