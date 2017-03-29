@@ -31,6 +31,7 @@ const plugins = [
 const config = {
   entry: './src/app.js',
   dest: './public/assets/js/app.js',
+  format: 'es',
   sourceMap: true,
   plugins: plugins
 }
