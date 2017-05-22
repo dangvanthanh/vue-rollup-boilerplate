@@ -15,7 +15,7 @@
     "vue": "^2.3.3"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.0",
+    "autoprefixer": "^7.1.1",
     "babel-core": "^6.24.1",
     "cross-env": "^5.0.0",
     "cssnano-cli": "^1.0.4",
