@@ -30,7 +30,7 @@
     "rollup-plugin-node-globals": "^1.1.0",
     "rollup-plugin-node-resolve": "^3.0.0",
     "rollup-plugin-serve": "^0.3.0",
-    "rollup-plugin-vue": "^2.3.3",
+    "rollup-plugin-vue": "^2.4.0",
     "rollup-watch": "^3.2.2"
   }
 }
