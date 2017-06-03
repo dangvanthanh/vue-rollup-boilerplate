@@ -15,7 +15,7 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
 h1 {
   padding: 0 .25em;
 }
