@@ -12,7 +12,8 @@
     "dev": "cross-env NODE_ENV=development rollup -cw"
   },
   "dependencies": {
-    "vue": "^2.3.3"
+    "vue": "^2.3.3"{{#router}},
+    "vue-router": "^2.5.3"{{/router}}
   },
   "devDependencies": {
     "autoprefixer": "^7.1.1",

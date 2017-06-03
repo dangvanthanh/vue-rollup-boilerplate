@@ -1,17 +1,14 @@
 <template>
   <div class="app">
-    <img src="assets/images/logo.png">
-    <h1>\{{ msg }}</h1>
+    <Hello></Hello>
   </div>
 </template>
 
 <script>
+import Hello from './components/Hello'
+
 export default {
-  data () {
-    return {
-      msg: 'Vue.js - The Progressive JavaScript Framework'
-    }
-  }
+  components: { Hello }
 }
 </script>
 
@@ -32,9 +29,5 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-}
-
-h1 {
-  padding: 0 .25em;
 }
 </style>

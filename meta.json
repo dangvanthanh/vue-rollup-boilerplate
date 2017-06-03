@@ -14,6 +14,10 @@
 		"author": {
 			"type": "string",
 			"label": "Author"
+		},
+		"router": {
+			"type": "confirm",
+			"message": "Install vue-router?"
 		}
 	}
 }
