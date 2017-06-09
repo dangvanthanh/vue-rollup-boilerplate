@@ -18,6 +18,10 @@
 		"router": {
 			"type": "confirm",
 			"message": "Install vue-router?"
+		},
+		"vuex": {
+			"type": "confirm",
+			"message": "Install vuex?"
 		}
 	}
 }
