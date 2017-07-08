@@ -12,22 +12,15 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 $ npm install -g vue-cli
 $ vue init dangvanthanh/vue-rollup-boilerplate my-project
 $ cd my-project
-
-# Run with yarn (recommend)
-$ yarn install
-$ yarn run dev
-
-# Run with npm
 $ npm install
 $ npm run dev
 ```
 
 ## What's Included
 
-| [yarn](https://yarnpkg.com) - recommend | [npm](https://www.npmjs.com/) | Description                               |
-|-----------------------------------------|-------------------------------|-------------------------------------------|
-| `yarn run dev`                          | `npm run dev`                 | Rollup + `vue-loader` with hot-reload     |
-| `yarn run build`                        | `npm run build`               | Production build with CSS/JS minification |
+|-------------------------------|-------------------------------------------|
+| `npm run dev`                 | Rollup + `vue-loader` with hot-reload     |
+| `npm run build`               | Production build with CSS/JS minification |
 
 For more information see the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
