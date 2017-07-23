@@ -4,7 +4,6 @@ import buble from 'rollup-plugin-buble'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import nodeGlobals from 'rollup-plugin-node-globals'
-import butternut from 'rollup-plugin-butternut'
 import livereload from 'rollup-plugin-livereload'
 import serve from 'rollup-plugin-serve'
 
@@ -40,7 +39,6 @@ const isDevelopment = process.env.NODE_ENV === `development`
 
 if (isProduction) {
   config.sourceMap = false
-  config.plugins.push(butternut)
 }
 
 if (isDevelopment) {
