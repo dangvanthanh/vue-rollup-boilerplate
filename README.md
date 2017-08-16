@@ -18,6 +18,7 @@ $ npm run dev
 
 ## What's Included
 
+| CLI                           | DESCRIPTION                               |
 |-------------------------------|-------------------------------------------|
 | `npm run dev`                 | Rollup + `vue-loader` with hot-reload     |
 | `npm run build`               | Production build with CSS/JS minification |
