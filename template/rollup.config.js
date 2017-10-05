@@ -4,16 +4,16 @@ import buble from 'rollup-plugin-buble'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import nodeGlobals from 'rollup-plugin-node-globals'
-import butternut from 'rollup-plugin-butternut'
+import uglify from 'rollup-plugin-uglify'
 import livereload from 'rollup-plugin-livereload'
 import serve from 'rollup-plugin-serve'
 
-const plugins = [
+let plugins = [
   alias({
     vue$: 'vue/dist/vue.common.js'
   }),
   vue({
-    css: './public/assets/css/app.css'
+    css: './dist/assets/css/app.css'
   }),
   buble({
     objectAssign: 'Object.assign'
@@ -27,11 +27,13 @@ const plugins = [
   nodeGlobals()
 ]
 
-const config = {
-  entry: './src/main.js',
-  dest: './public/assets/js/app.js',
-  format: 'es',
-  sourceMap: true,
+let config = {
+  input: './src/main.js',
+  output: {
+    file: './dist/assets/js/app.js',
+    format: 'umd'
+  },
+  sourcemap: true,
   plugins: plugins
 }
 
@@ -39,14 +41,14 @@ const isProduction = process.env.NODE_ENV === `production`
 const isDevelopment = process.env.NODE_ENV === `development`
 
 if (isProduction) {
-  config.sourceMap = false
-  config.plugins.push(butternut())
+  config.sourcemap = false
+  config.plugins.push(uglify())
 }
 
 if (isDevelopment) {
   config.plugins.push(livereload())
   config.plugins.push(serve({
-    contentBase: './public/',
+    contentBase: './dist/',
     port: 8080,
     open: true
   }))
