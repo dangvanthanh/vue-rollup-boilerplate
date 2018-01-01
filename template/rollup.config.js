@@ -31,9 +31,9 @@ let config = {
   input: './src/main.js',
   output: {
     file: './dist/assets/js/app.js',
-    format: 'umd'
+    format: 'umd',
+    sourcemap: true
   },
-  sourcemap: true,
   plugins: plugins
 }
 
