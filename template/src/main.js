@@ -9,6 +9,5 @@ Vue.use(VueRouter)
 {{/router}}
 
 const app = new Vue({
-  el: '#app',
   render: h => h(App)
-})
+}).$mount('#app')
