@@ -8,7 +8,7 @@
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
-``` bash
+```bash
 $ npm install -g vue-cli
 $ vue init dangvanthanh/vue-rollup-boilerplate my-project
 $ cd my-project
@@ -18,10 +18,10 @@ $ npm run dev
 
 ## What's Included
 
-| CLI                           | DESCRIPTION                               |
-|-------------------------------|-------------------------------------------|
-| `npm run dev`                 | Rollup + `vue-loader` with hot-reload     |
-| `npm run build`               | Production build with CSS/JS minification |
+| CLI             | DESCRIPTION                               |
+| --------------- | ----------------------------------------- |
+| `npm run serve` | Rollup + `vue-loader` with hot-reload     |
+| `npm run build` | Production build with CSS/JS minification |
 
 For more information see the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
@@ -29,13 +29,13 @@ For more information see the [docs for vue-loader](http://vuejs.github.io/vue-lo
 
 You will likely need to do some tuning to suit your own needs:
 
-- Install additional libraries that you need such as [vue-router](https://github.com/vuejs/vue-router), [vue-resource](https://github.com/vuejs/vue-resource), [vuex](https://github.com/vuejs/vuex), etc...
-- A little development server with live reload capability with [rollup-plugin-serve](https://github.com/thgh/rollup-plugin-serve) and [rollup-plugin-livereload](https://github.com/thgh/rollup-plugin-livereload).
+* Install additional libraries that you need such as [vue-router](https://github.com/vuejs/vue-router), [vue-resource](https://github.com/vuejs/vue-resource), [vuex](https://github.com/vuejs/vuex), etc...
+* A little development server with live reload capability with [rollup-plugin-serve](https://github.com/thgh/rollup-plugin-serve) and [rollup-plugin-livereload](https://github.com/thgh/rollup-plugin-livereload).
 
 ## Fork It And Make Your Own
 
 You can folk this repo to create own boilerplate, and use it with `vue-cli`
 
-``` bash
+```bash
 vue init username/repo my-project
 ```

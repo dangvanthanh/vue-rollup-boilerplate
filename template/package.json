@@ -9,7 +9,7 @@
     "build:js": "cross-env NODE_ENV=production rollup -c",
     "build:autoprefixer": "postcss --use autoprefixer -o dist/assets/css/app.css dist/assets/css/app.css",
     "build:cssnano": "cssnano dist/assets/css/app.css dist/assets/css/app.css",
-    "dev": "cross-env NODE_ENV=development rollup -cw"
+    "serve": "cross-env NODE_ENV=development rollup -cw"
   },
   "dependencies": {
     "vue": "^2.5.13"{{#router}},
