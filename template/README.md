@@ -9,7 +9,7 @@
 # Install dependencies
 yarn install
 
-# Server with hot reload at localhost:8080
+# Server with hot reload at localhost:5000
 yarn run dev
 
 # Build for production with minification
@@ -21,7 +21,7 @@ yarn run build
 # Install dependencies
 npm install
 
-# Server with hot reload at localhost:8080
+# Server with hot reload at localhost:5000
 npm run dev
 
 # Build for production with minification

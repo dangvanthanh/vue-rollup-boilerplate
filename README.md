@@ -13,14 +13,14 @@ $ npm install -g vue-cli
 $ vue init dangvanthanh/vue-rollup-boilerplate my-project
 $ cd my-project
 $ npm install
-$ npm run serve
+$ npm run dev
 ```
 
 ## What's Included
 
 | CLI             | DESCRIPTION                               |
 | --------------- | ----------------------------------------- |
-| `npm run serve` | Rollup + `vue-loader` with hot-reload     |
+| `npm run dev`   | Rollup + `vue-loader` with hot-reload     |
 | `npm run build` | Production build with CSS/JS minification |
 
 For more information see the [docs for vue-loader](http://vuejs.github.io/vue-loader).
