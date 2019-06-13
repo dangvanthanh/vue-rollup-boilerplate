@@ -1,13 +1,13 @@
 <template>
   <div>
-    <img src="assets/images/logo.png">
+    <img src="assets/logo.png">
     <h1>\{{ msg }}</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'hello',
+  name: 'Hello',
   data () {
     return {
       msg: 'Vue.js - The Progressive JavaScript Framework'
