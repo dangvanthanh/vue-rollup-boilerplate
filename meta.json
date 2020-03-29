@@ -17,11 +17,11 @@
 		},
 		"router": {
 			"type": "confirm",
-			"message": "Install vue-router?"
+			"message": "Do you want install vue-router?"
 		},
 		"vuex": {
 			"type": "confirm",
-			"message": "Install vuex?"
+			"message": "Do you want install vuex?"
 		}
 	}
 }
