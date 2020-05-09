@@ -1,6 +1,6 @@
-# vue-rollup-boilerplate
+# Vue Rollup Boilerplate
 
-> A simple rollup and vue-loader setup for quick prototyping.
+> A simple rollup, [vue-loader](http://vuejs.github.io/vue-loader) and [esbuild](https://github.com/evanw/esbuild) setup for quick prototyping.
 
 ![](screenshot.png)
 
@@ -47,6 +47,15 @@ vue init username/repo my-project
 ```
 
 ## Structure
+
+```
+|_ public
+|_ src
+  |_ components
+    |_ Hello.vue
+  |_ App.vue
+  |_ main.js
+```
 
 Comming soon when support TypeScript
 
