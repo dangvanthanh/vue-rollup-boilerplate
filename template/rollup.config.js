@@ -1,12 +1,14 @@
+import replace from '@rollup/plugin-replace';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import vue from 'rollup-plugin-vue';
-import replace from 'rollup-plugin-replace';
-import resolve from 'rollup-plugin-node-resolve';
 import esbuild from 'rollup-plugin-esbuild';
-import commonjs from 'rollup-plugin-commonjs';
+import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
 
 const production = !process.env.ROLLUP_WATCH;
+const port = 8080;
 
 export default {
   input: 'src/main.js',
@@ -14,38 +16,26 @@ export default {
     file: 'public/assets/app.js',
     format: 'iife',
     sourcemap: false,
-    name: 'app'
+    name: 'app',
   },
   plugins: [
     postcss({ extract: true }),
     vue({ css: false }),
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production')
+      'process.env.NODE_ENV': JSON.stringify('production'),
     }),
-    resolve(),
+    resolve({ extensions: ['.js', '.vue'], browser: true, preferBuiltins: true }),
+    commonjs(),
     esbuild({
       minify: production,
-      target: 'es2015'
+      target: 'es2015',
     }),
-    commonjs(),
-    !production && serve(),
-    !production && livereload('public')
-  ]
-}
-
-function serve() {
-	let started = false;
-
-	return {
-		writeBundle() {
-			if (!started) {
-				started = true;
-
-				require('child_process').spawn('npm', ['run', 'start', '--', '--dev'], {
-					stdio: ['ignore', 'inherit', 'inherit'],
-					shell: true
-				});
-			}
-		}
-	};
-}
+    !production &&
+      serve({
+        contentBase: 'public',
+        historyApiFallback: true,
+        port,
+      }),
+    !production && livereload({ watch: 'public' }),
+  ],
+};
