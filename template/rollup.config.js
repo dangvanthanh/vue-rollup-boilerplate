@@ -32,6 +32,7 @@ export default {
     }),
     !production &&
       serve({
+        open: true,
         contentBase: 'public',
         historyApiFallback: true,
         port,
