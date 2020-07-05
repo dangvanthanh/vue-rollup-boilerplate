@@ -4,7 +4,7 @@
 
 ![](screenshot.png)
 
-## Usage
+## Installation 
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
@@ -15,28 +15,32 @@ $ cd my-project
 $ npm install
 ```
 
-then start Rollup
+## Usage
 
 ```bash
 $ npm run dev
 ```
 
-## What's Included
+You can view the development server at `localhost:8080`
 
-| CLI             | DESCRIPTION                               |
-| --------------- | ----------------------------------------- |
-| `npm run dev`   | Rollup + `vue-loader` with hot-reload     |
-| `npm run build` | Production build with CSS/JS minification |
+## Production build
 
-For more information see the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+```bash
+$ npm run build
+```
 
-## Customizations
+You can view the deploy by creating a server in `dist`
 
-You will likely need to do some tuning to suit your own needs:
+```bash
+$ cd dist && npx serve
+```
 
-- Install additional libraries that you need such as:
-  - [vue-router](https://github.com/vuejs/vue-router)
-  - [vuex](https://github.com/vuejs/vuex)
+## Features
+
+- [Rollup](https://rollupjs.org/guide/en/)
+- [PostCSS](https://postcss.org/)
+- [ESBuild](https://github.com/evanw/esbuild)
+
 
 ## Fork It And Make Your Own
 
@@ -46,46 +50,6 @@ You can folk this repo to create own boilerplate, and use it with `vue-cli`
 vue init username/repo my-project
 ```
 
-## Structure
+## Author
 
-```
-|_ public
-|_ src
-  |_ components
-    |_ Hello.vue
-  |_ App.vue
-  |_ main.js
-```
-
-Comming soon when support TypeScript
-
-```
-|_ public
-|_ src
-  |_ assets
-  |_ components
-  |_ config
-  |_ decorators
-  |_ directives
-  |_ enums
-  | |_ feature
-  | |_ shared
-  |_ filters
-  |_ i18n
-  |_ mixins
-  |_ model
-  | |_ feature
-  | |_ shared
-  |_ plugins
-  |_ queries
-  |_ router
-  |_ service-worker
-  |_ store
-  | |_ commands
-  | |_ module
-  |_ views
-|_ tests
-  |_ e2e
-  |_ helpers
-  |_ unit
-```
+- [dangvanthanh](https://github.com/dangvanthanh)
