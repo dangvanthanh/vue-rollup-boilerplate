@@ -52,4 +52,4 @@ vue init username/repo my-project
 
 ## Author
 
-MIT © Dang Van Thanh](http://dangthanh.org)
+MIT © [Dang Van Thanh](http://dangthanh.org)
