@@ -6,14 +6,7 @@
 
 ## Installation 
 
-This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
-
-```bash
-$ npm install -g @vue/cli-init
-$ vue init dangvanthanh/vue-rollup-boilerplate my-project
-$ cd my-project
-$ npm install
-```
+You can generate then [use this template](https://github.com/dangvanthanh/vue-rollup-boilerplate/generate)
 
 ## Usage
 
@@ -40,16 +33,12 @@ $ cd dist && npx serve
 - [Rollup](https://rollupjs.org/guide/en/)
 - [PostCSS](https://postcss.org/)
 - [ESBuild](https://github.com/evanw/esbuild)
-
+- [Prettier](https://prettier.io/)
 
 ## Fork It And Make Your Own
 
-You can folk this repo to create own boilerplate, and use it with `vue-cli`
+You can folk this repo to create own boilerplate.
 
-```bash
-vue init username/repo my-project
-```
+## License
 
-## Author
-
-MIT © [Dang Van Thanh](http://dangthanh.org)
+MIT Â© [Dang Van Thanh](http://dangthanh.org)
