@@ -7,6 +7,7 @@ import vue from 'rollup-plugin-vue';
 import esbuild from 'rollup-plugin-esbuild';
 import serve from 'rollup-plugin-serve';
 import livereload from 'rollup-plugin-livereload';
+import cssnano from 'cssnano';
 
 const production = !process.env.ROLLUP_WATCH;
 const port = 8080;
@@ -21,16 +22,18 @@ export default {
   },
   plugins: [
     alias({
-      entries: [
-        { find: '@', replacement: __dirname + '/src/' }
-      ]
+      entries: [{ find: '@', replacement: __dirname + '/src/' }],
     }),
-    postcss({ extract: true }),
+    postcss({ extract: true, plugins: production ? [cssnano()] : [] }),
     vue({ css: false }),
     replace({
       'process.env.NODE_ENV': JSON.stringify('production'),
     }),
-    resolve({ extensions: ['.js', '.vue'], browser: true, preferBuiltins: true }),
+    resolve({
+      extensions: ['.js', '.vue'],
+      browser: true,
+      preferBuiltins: true,
+    }),
     commonjs(),
     esbuild({
       minify: production,
