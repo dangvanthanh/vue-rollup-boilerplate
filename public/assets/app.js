@@ -4024,7 +4024,7 @@
       keys.push(key);
       var value = validateProp(key, propsOptions, propsData, vm);
       /* istanbul ignore else */
-      var hyphenatedKey; {
+      {
         defineReactive$$1(props, key, value);
       }
       // static props are already proxied on the component's prototype
@@ -7328,7 +7328,7 @@
       for (var i = 0; i < rawChildren.length; i++) {
         var c = rawChildren[i];
         if (c.tag) {
-          var opts, name; if (c.key != null && String(c.key).indexOf('__vlist') !== 0) {
+          if (c.key != null && String(c.key).indexOf('__vlist') !== 0) {
             children.push(c);
             map[c.key] = c
             ;(c.data || (c.data = {})).transition = transitionData;

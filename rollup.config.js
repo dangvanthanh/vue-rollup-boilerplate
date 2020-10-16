@@ -48,4 +48,7 @@ export default {
       }),
     !production && livereload({ watch: 'public' }),
   ],
+  watch: {
+    clearScreen: true
+  }
 };

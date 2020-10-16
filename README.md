@@ -11,7 +11,7 @@ You can generate then [use this template](https://github.com/dangvanthanh/vue-ro
 ## Usage
 
 ```bash
-$ npm run dev
+$ npm run serve
 ```
 
 You can view the development server at `localhost:8080`
