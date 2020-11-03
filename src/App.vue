@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style>
 body {
   display: flex;
   align-items: center;

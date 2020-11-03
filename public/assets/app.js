@@ -7493,12 +7493,20 @@
     }, 0);
   }
 
+  //
+  //
+  //
+  //
+  //
+  //
+  //
+
   var script = {
-    name: "Hello",
-    data() {
+    name: 'Hello',
+    data () {
       return {
-        msg: "Vue.js - The Progressive JavaScript Framework"
-      };
+        msg: 'Vue.js - The Progressive JavaScript Framework'
+      }
     }
   };
 
@@ -7622,9 +7630,11 @@
       undefined
     );
 
+  //
+
   var script$1 = {
-    name: "App",
-    components: {Hello: __vue_component__}
+    name: 'App',
+    components: { Hello: __vue_component__ },
   };
 
   /* script */
@@ -7669,8 +7679,9 @@
     );
 
   Vue.config.productionTip = false;
+
   new Vue({
-    render: (h) => h(__vue_component__$1)
-  }).$mount("#app");
+    render: h => h(__vue_component__$1)
+  }).$mount('#app');
 
 }());
