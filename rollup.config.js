@@ -1,6 +1,6 @@
 import alias from '@rollup/plugin-alias';
 import replace from '@rollup/plugin-replace';
-import resolve from '@rollup/plugin-node-resolve';
+import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import vue from 'rollup-plugin-vue';
@@ -25,16 +25,12 @@ export default {
       entries: [{ find: '@', replacement: __dirname + '/src/' }],
     }),
     postcss({ extract: true, plugins: production ? [cssnano()] : [] }),
+    nodeResolve(),
+    commonjs(),
     vue({ css: false }),
     replace({
-      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.NODE_ENV': '"production"',
     }),
-    resolve({
-      extensions: ['.js', '.vue'],
-      browser: true,
-      preferBuiltins: true,
-    }),
-    commonjs(),
     esbuild({
       minify: production,
       target: 'es2015',
@@ -49,6 +45,6 @@ export default {
     !production && livereload({ watch: 'public' }),
   ],
   watch: {
-    clearScreen: true
-  }
+    clearScreen: true,
+  },
 };
