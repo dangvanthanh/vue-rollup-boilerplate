@@ -7503,11 +7503,11 @@
 
   var script = {
     name: 'Hello',
-    data () {
+    data() {
       return {
-        msg: 'Vue.js - The Progressive JavaScript Framework'
+        msg: 'Vue.js - The Progressive JavaScript Framework',
       }
-    }
+    },
   };
 
   function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier /* server only */, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
@@ -7604,7 +7604,7 @@
     /* style */
     const __vue_inject_styles__ = undefined;
     /* scoped */
-    const __vue_scope_id__ = "data-v-1b5ce25a";
+    const __vue_scope_id__ = "data-v-b51294ca";
     /* module identifier */
     const __vue_module_identifier__ = undefined;
     /* functional template */
