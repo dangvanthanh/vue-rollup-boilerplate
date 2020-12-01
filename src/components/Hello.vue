@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="assets/logo.png" />
+    <img src="@/assets/images/logo.png" />
     <h1>{{ msg }}</h1>
   </div>
 </template>

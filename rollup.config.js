@@ -2,6 +2,7 @@ import alias from '@rollup/plugin-alias'
 import replace from '@rollup/plugin-replace'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
+import image from '@rollup/plugin-image'
 import postcss from 'rollup-plugin-postcss'
 import vue from 'rollup-plugin-vue'
 import esbuild from 'rollup-plugin-esbuild'
@@ -24,6 +25,7 @@ export default {
     alias({
       entries: [{ find: '@', replacement: __dirname + '/src/' }],
     }),
+    image(),
     postcss({ extract: true, plugins: production ? [cssnano()] : [] }),
     nodeResolve(),
     commonjs(),
