@@ -9,6 +9,7 @@ import esbuild from 'rollup-plugin-esbuild'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 import cssnano from 'cssnano'
+import { terser } from "rollup-plugin-terser";
 
 const production = !process.env.ROLLUP_WATCH
 const port = 8080
@@ -34,9 +35,10 @@ export default {
       'process.env.NODE_ENV': '"production"',
     }),
     esbuild({
-      minify: production,
+      minify: false,
       target: 'es2015',
     }),
+    production && terser(),
     !production &&
       serve({
         open: true,
