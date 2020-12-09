@@ -9,6 +9,7 @@ import esbuild from 'rollup-plugin-esbuild'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 import cssnano from 'cssnano'
+import filesize from 'rollup-plugin-filesize'
 
 const production = !process.env.ROLLUP_WATCH
 const port = 8080
@@ -45,6 +46,7 @@ export default {
         port,
       }),
     !production && livereload({ watch: 'public' }),
+    production && filesize(),
   ],
   watch: {
     clearScreen: true,
