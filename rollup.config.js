@@ -32,7 +32,7 @@ export default {
     commonjs(),
     vue({ css: false }),
     replace({
-      'process.env.NODE_ENV': '"production"',
+      'process.env.NODE_ENV': production ? '"production"' : '"development"'
     }),
     esbuild({
       minify: production,
