@@ -524,10 +524,10 @@
   var isIE = UA && /msie|trident/.test(UA);
   var isIE9 = UA && UA.indexOf('msie 9.0') > 0;
   var isEdge = UA && UA.indexOf('edge/') > 0;
-  var isAndroid = (UA && UA.indexOf('android') > 0) || (weexPlatform === 'android');
+  (UA && UA.indexOf('android') > 0) || (weexPlatform === 'android');
   var isIOS = (UA && /iphone|ipad|ipod|ios/.test(UA)) || (weexPlatform === 'ios');
-  var isChrome = UA && /chrome\/\d+/.test(UA) && !isEdge;
-  var isPhantomJS = UA && /phantomjs/.test(UA);
+  UA && /chrome\/\d+/.test(UA) && !isEdge;
+  UA && /phantomjs/.test(UA);
   var isFF = UA && UA.match(/firefox\/(\d+)/);
 
   // Firefox has a "watch" function on Object.prototype...
@@ -2192,9 +2192,9 @@
     createOnceHandler,
     vm
   ) {
-    var name, def$$1, cur, old, event;
+    var name, cur, old, event;
     for (name in on) {
-      def$$1 = cur = on[name];
+      cur = on[name];
       old = oldOn[name];
       event = normalizeEvent(name);
       if (isUndef(cur)) {
