@@ -1,4 +1,5 @@
 import alias from '@rollup/plugin-alias'
+import json from '@rollup/plugin-json';
 import replace from '@rollup/plugin-replace'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
@@ -10,6 +11,7 @@ import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 import cssnano from 'cssnano'
 import filesize from 'rollup-plugin-filesize'
+import requireContext from 'rollup-plugin-require-context'
 
 const production = !process.env.ROLLUP_WATCH
 const port = 8080
@@ -23,16 +25,22 @@ export default {
     name: 'app',
   },
   plugins: [
+    json(),
     alias({
       entries: [{ find: '@', replacement: __dirname + '/src/' }],
     }),
     image(),
     postcss({ extract: true, plugins: production ? [cssnano()] : [] }),
-    nodeResolve(),
+    requireContext(),
+    nodeResolve({
+      jsnext: true,
+      main: true,
+      browser: true,
+    }),
     commonjs(),
     vue({ css: false }),
     replace({
-      'process.env.NODE_ENV': production ? '"production"' : '"development"'
+      'process.env.NODE_ENV': production ? '"production"' : '"development"',
     }),
     esbuild({
       minify: production,
