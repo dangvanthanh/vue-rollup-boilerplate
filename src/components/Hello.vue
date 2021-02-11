@@ -1,17 +1,20 @@
 <template>
-  <div>
+  <div class="hello">
     <img src="@/assets/images/logo.png" />
     <h1>{{ $t('hello') }}</h1>
-    <ul>
-      <li
+    <p>The Progressive JavaScript Framework</p>
+    <div class="action">
+      <a
+        href="#"
         v-for="language in languages"
+        class="action-item"
         :key="language.value"
         :class="{ active: currentLocale === language.value }"
-        @click="changeLocale(language.value)"
+        @click.prevent="changeLocale(language.value)"
       >
         {{ language.text }}
-      </li>
-    </ul>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -21,8 +24,8 @@ export default {
   data() {
     return {
       languages: [
-        { value: 'en', text: 'EN' },
-        { value: 'vi', text: 'VI' },
+        { value: 'en', text: 'English' },
+        { value: 'vi', text: 'Tiếng Việt' },
       ],
     }
   },
@@ -40,28 +43,44 @@ export default {
 </script>
 
 <style scoped>
+.hello {
+  --color-white: #fff;
+  --color-brand: #42b883;
+}
+
 h1 {
   padding: 0 0.25em;
   font-size: 1.875rem;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+p {
+  font-size: 1.25rem;
 }
 
-li {
+.action {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.action-item {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 0.25rem;
-  color: #c6c6c6;
+  padding: .75rem 2rem;
+  margin: 0 0.5rem;
+  color: var(--color-brand);
   font-weight: 500;
   cursor: pointer;
+  border: 2px solid var(--color-brand);
+  font-size: 1rem;
+  text-align: center;
+  border-radius: 2rem;
+  text-decoration: none;
+  min-width: 5rem;
 }
 
-li.active {
-  color: #222;
+.action-item.active {
+  background-color: var(--color-brand);
+  color: var(--color-white);
   cursor: default;
   pointer-events: none;
 }

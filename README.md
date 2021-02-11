@@ -10,6 +10,14 @@ You can generate then [use this template](https://github.com/dangvanthanh/vue-ro
 
 ## Usage
 
+### PNPM 
+
+```bash
+$ pnpm run serve
+```
+
+### NPM
+
 ```bash
 $ npm run serve
 ```
