@@ -1,5 +1,5 @@
 import alias from '@rollup/plugin-alias'
-import json from '@rollup/plugin-json';
+import json from '@rollup/plugin-json'
 import replace from '@rollup/plugin-replace'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
@@ -30,7 +30,7 @@ export default {
       entries: [{ find: '@', replacement: __dirname + '/src/' }],
     }),
     image(),
-    postcss({ extract: true, plugins: production ? [cssnano()] : [] }),
+    postcss({ extract: true, plugins: production ? [cssnano] : [] }),
     requireContext(),
     nodeResolve({
       jsnext: true,
@@ -41,6 +41,7 @@ export default {
     vue({ css: false }),
     replace({
       'process.env.NODE_ENV': production ? '"production"' : '"development"',
+      preventAssignment: true,
     }),
     esbuild({
       minify: production,
