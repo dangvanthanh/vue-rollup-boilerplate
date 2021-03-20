@@ -8649,7 +8649,7 @@
   };
 
   /*!
-   * vue-i18n v8.22.4 
+   * vue-i18n v8.24.1 
    * (c) 2021 kazuya kawaguchi
    * Released under the MIT License.
    */
@@ -9024,6 +9024,12 @@
       } else if (options.parent && options.parent.$i18n && options.parent.$i18n instanceof VueI18n) {
         this._i18n.subscribeDataChanging(this);
         this._subscribing = true;
+      }
+    },
+
+    mounted: function mounted () {
+      if (this !== this.$root && this.$options.__INTLIFY_META__ && this.$el) {
+        this.$el.setAttribute('data-intlify', this.$options.__INTLIFY_META__);
       }
     },
 
@@ -9778,7 +9784,7 @@
       var i = 0;
       while (i < length) {
         var value = last[paths[i]];
-        if (value === undefined) {
+        if (value === undefined || value === null) {
           return null
         }
         last = value;
@@ -10841,7 +10847,7 @@
   });
 
   VueI18n.install = install;
-  VueI18n.version = '8.22.4';
+  VueI18n.version = '8.24.1';
 
   Vue.use(VueI18n);
   function loadLocales() {
