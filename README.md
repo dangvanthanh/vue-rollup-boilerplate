@@ -43,6 +43,16 @@ $ cd dist && npx serve
 - [ESBuild](https://github.com/evanw/esbuild)
 - [Prettier](https://prettier.io/)
 
+## Components
+
+Atomic design components
+
+- Atoms
+- Molecules
+- Organisms
+- Templates
+- Pages
+
 ## Fork It And Make Your Own
 
 You can folk this repo to create own boilerplate.

@@ -1,18 +1,23 @@
 <template>
-  <div class="app">
-    <Hello />
-  </div>
+  <p>{{ text }}</p>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import Hello from '@/components/pages/Hello.vue'
 
 export default defineComponent({
-  name: 'App',
-  components: { Hello },
+  name: 'AtomText',
+  props: {
+    text: {
+      type: String,
+    },
+  },
 })
 </script>
 
 <style scoped>
+p {
+  font-size: 1.25rem;
+}
 </style>
+

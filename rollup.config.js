@@ -9,19 +9,32 @@ import vue from 'rollup-plugin-vue'
 import esbuild from 'rollup-plugin-esbuild'
 import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
-import cssnano from 'cssnano'
 import filesize from 'rollup-plugin-filesize'
 import requireContext from 'rollup-plugin-require-context'
+import postcssImport from 'postcss-import'
+import postcssCustomMedia from 'postcss-custom-media'
+import postcssNested from 'postcss-nested'
+import postcssSortMediaQueries from 'postcss-sort-media-queries'
+import cssnano from 'cssnano'
 
 const production = !process.env.ROLLUP_WATCH
 const port = 8080
 
+const postCssPlugins = [
+  postcssImport(),
+  postcssCustomMedia(),
+  postcssNested(),
+  postcssSortMediaQueries(),
+  production && cssnano(),
+]
+
 export default {
   input: 'src/main.js',
   output: {
-    file: 'public/assets/app.js',
+    dir: 'public/assets',
+    entryFileNames: 'app.js',
     format: 'iife',
-    sourcemap: false,
+    sourcemap: !production ? 'inline' : false,
     name: 'app',
   },
   plugins: [
@@ -30,7 +43,7 @@ export default {
       entries: [{ find: '@', replacement: __dirname + '/src/' }],
     }),
     image(),
-    postcss({ extract: true, plugins: production ? [cssnano] : [] }),
+    postcss({ extract: 'app.css', plugins: postCssPlugins }),
     requireContext(),
     nodeResolve({
       jsnext: true,
@@ -57,7 +70,7 @@ export default {
     !production && livereload({ watch: 'public' }),
     production && filesize(),
   ],
-  watch: {
-    clearScreen: true,
-  },
+  // watch: {
+  //   clearScreen: true,
+  // },
 }
