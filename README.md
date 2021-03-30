@@ -53,6 +53,17 @@ Atomic design components
 - Templates
 - Pages
 
+## Makefile and PNPM
+
+```shell
+$ time make build and time pnpm build
+```
+
+|          | user  | system | cpu  | total |
+|----------|-------|--------|------|-------|
+| Makefile | 7.17s | 0.73s  | 102% | 7.706 |
+| PNPM     | 7.35s | 0.69s  | 102% | 7.821 |
+
 ## Fork It And Make Your Own
 
 You can folk this repo to create own boilerplate.

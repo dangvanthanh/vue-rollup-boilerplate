@@ -70,7 +70,7 @@ export default {
     !production && livereload({ watch: 'public' }),
     production && filesize(),
   ],
-  // watch: {
-  //   clearScreen: true,
-  // },
+  watch: {
+    clearScreen: true,
+  },
 }
