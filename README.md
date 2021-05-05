@@ -2,6 +2,8 @@
 
 > A simple rollup, [vue-loader](http://vuejs.github.io/vue-loader) and [esbuild](https://github.com/evanw/esbuild) setup for quick prototyping.
 
+Currently, this boilerplate support good for [Vue 2](https://vuejs.org/v2/guide/). For [Vue 3](https://v3.vuejs.org/), you can try [Vite](https://vitejs.dev/) 
+
 ![](screenshot.png)
 
 ## Installation 
