@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@vue/composition-api": "^1.0.0-rc.5",
-    "vue": "^2.6.12",
+    "vue": "^2.6.13",
     "vue-i18n": "^8.24.4",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
@@ -26,19 +26,19 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@rollup/plugin-replace": "^2.4.2",
-    "cssnano": "^5.0.2",
-    "esbuild": "^0.11.22",
+    "cssnano": "^5.0.5",
+    "esbuild": "^0.12.5",
     "generate-source-map": "^0.0.5",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
-    "postcss": "8.2.15",
+    "postcss": "^8.3.0",
     "postcss-custom-media": "^8.0.0",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.5",
-    "postcss-sort-media-queries": "^3.9.10",
+    "postcss-sort-media-queries": "^3.10.11",
     "prettier": "^2.3.0",
-    "prettier-package-json": "^2.5.0",
-    "rollup": "^2.48.0",
+    "prettier-package-json": "^2.6.0",
+    "rollup": "^2.50.5",
     "rollup-plugin-esbuild": "^4.2.3",
     "rollup-plugin-filesize": "^9.1.1",
     "rollup-plugin-livereload": "^2.0.0",
@@ -46,7 +46,7 @@
     "rollup-plugin-require-context": "^1.0.1",
     "rollup-plugin-serve": "^1.1.0",
     "rollup-plugin-vue": "^5.1.9",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.13"
   },
   "lint-staged": {
     "*.{js,json,vue},!dist/*.js": [
