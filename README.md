@@ -15,12 +15,16 @@ You can generate then [use this template](https://github.com/dangvanthanh/vue-ro
 ### PNPM 
 
 ```bash
+$ pnpm start
+// or
 $ pnpm run serve
 ```
 
 ### NPM
 
 ```bash
+$ npm start
+// or
 $ npm run serve
 ```
 
