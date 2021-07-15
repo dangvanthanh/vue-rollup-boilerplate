@@ -16,7 +16,7 @@ import { defineComponent } from '@vue/composition-api'
 import AtomLink from '@/components/atoms/AtomLink.vue'
 
 export default defineComponent({
-  name: 'AtomLinks',
+  name: 'MoleculeLinks',
   components: { AtomLink },
   props: {
     links: {

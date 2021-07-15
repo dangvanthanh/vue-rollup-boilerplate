@@ -11,14 +11,14 @@
     "start": "npm run serve"
   },
   "dependencies": {
-    "@vue/composition-api": "^1.0.0-rc.5",
+    "@vue/composition-api": "^1.0.0",
     "vue": "^2.6.14",
     "vue-i18n": "^8.24.5",
     "vue-router": "^3.5.2",
     "vuex": "^3.6.2"
   },
   "peerDependencies": {
-    "postcss": "^8.2.15"
+    "postcss": "^8.3.5"
   },
   "devDependencies": {
     "@rollup/plugin-alias": "^3.1.2",
@@ -30,7 +30,7 @@
     "cssnano": "^5.0.6",
     "esbuild": "^0.12.9",
     "generate-source-map": "^0.0.5",
-    "husky": "^6.0.0",
+    "husky": "^7.0.1",
     "lint-staged": "^11.0.0",
     "postcss": "^8.3.5",
     "postcss-custom-media": "^8.0.0",
@@ -42,7 +42,7 @@
     "rollup": "^2.52.2",
     "rollup-plugin-esbuild": "^4.5.0",
     "rollup-plugin-filesize": "^9.1.1",
-    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-require-context": "^1.0.1",
     "rollup-plugin-serve": "^1.1.0",

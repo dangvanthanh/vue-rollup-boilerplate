@@ -1,16 +1,16 @@
 <template>
   <div class="app">
-    <Hello />
+    <PageHello />
   </div>
 </template>
 
 <script>
 import { defineComponent } from '@vue/composition-api'
-import Hello from '@/components/pages/Hello.vue'
+import PageHello from '@/components/pages/PageHello.vue'
 
 export default defineComponent({
   name: 'App',
-  components: { Hello },
+  components: { PageHello },
 })
 </script>
 

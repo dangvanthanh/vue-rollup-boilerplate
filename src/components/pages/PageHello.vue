@@ -3,16 +3,16 @@
     <AtomLogo />
     <AtomHeading :text="$t('hello')" />
     <AtomText text="The Progressive JavaScript Framework" />
-    <AtomLinks :links="languages" />
+    <MoleculeLinks :links="languages" />
   </div>
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { ref, defineComponent } from '@vue/composition-api'
 import AtomLogo from '@/components/atoms/AtomLogo.vue'
 import AtomHeading from '@/components/atoms/AtomHeading.vue'
 import AtomText from '@/components/atoms/AtomText.vue'
-import AtomLinks from '@/components/molecules/AtomLinks.vue'
+import MoleculeLinks from '@/components/molecules/MoleculeLinks.vue'
 
 export default defineComponent({
   name: 'Hello',
@@ -20,14 +20,16 @@ export default defineComponent({
     AtomLogo,
     AtomHeading,
     AtomText,
-    AtomLinks,
+    MoleculeLinks,
   },
-  data() {
+  setup() {
+    const languages = ref([
+      { href: '#', value: 'en', text: 'English' },
+      { href: '#', value: 'vi', text: 'Tiếng Việt' },
+    ])
+
     return {
-      languages: [
-        { href: '#', value: 'en', text: 'English' },
-        { href: '#', value: 'vi', text: 'Tiếng Việt' },
-      ],
+      languages,
     }
   },
 })
