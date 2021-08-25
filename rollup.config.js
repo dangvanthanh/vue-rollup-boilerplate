@@ -51,7 +51,7 @@ export default {
       browser: true,
     }),
     commonjs(),
-    vue({ css: false }),
+    vue({ css: false, needMap: false }),
     replace({
       'process.env.NODE_ENV': production ? '"production"' : '"development"',
       preventAssignment: true,

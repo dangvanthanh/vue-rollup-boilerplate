@@ -2,7 +2,7 @@
   <div class="hello">
     <AtomLogo />
     <AtomHeading :text="$t('hello')" />
-    <AtomText text="The Progressive JavaScript Framework" />
+    <AtomText text="The Progressive JavaScript Framework 344" />
     <MoleculeLinks :links="languages" />
   </div>
 </template>
