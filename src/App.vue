@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script>
+<script setup>
 import { defineComponent } from '@vue/composition-api'
 import PageHello from '@/components/pages/PageHello.vue'
 
