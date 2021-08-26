@@ -10070,12 +10070,12 @@
     );
 
   var hello$1 = "Hello Vue.js";
-  var require_context_module_2_0 = {
+  var require_context_module_0_0 = {
   	hello: hello$1
   };
 
   var hello = "Xin chào Vue.js";
-  var require_context_module_2_1 = {
+  var require_context_module_0_1 = {
   	hello: hello
   };
 
@@ -12307,8 +12307,8 @@
   function loadLocales() {
     const locales = function() {
       var map = {
-        "./en.json": require_context_module_2_0,
-        "./vi.json": require_context_module_2_1
+        "./en.json": require_context_module_0_0,
+        "./vi.json": require_context_module_0_1
       };
       var req = function req2(key) {
         return map[key] || function() {

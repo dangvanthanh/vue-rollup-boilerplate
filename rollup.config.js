@@ -11,6 +11,7 @@ import serve from 'rollup-plugin-serve'
 import livereload from 'rollup-plugin-livereload'
 import filesize from 'rollup-plugin-filesize'
 import requireContext from 'rollup-plugin-require-context'
+import { visualizer } from 'rollup-plugin-visualizer'
 import postcssImport from 'postcss-import'
 import postcssCustomMedia from 'postcss-custom-media'
 import postcssNested from 'postcss-nested'
@@ -60,6 +61,10 @@ export default {
       minify: production,
       target: 'es2015',
     }),
+    !production &&
+      visualizer({
+        open: true
+      }),
     !production &&
       serve({
         open: true,

@@ -21,6 +21,7 @@
     "postcss": "^8.3.5"
   },
   "devDependencies": {
+    "@dangvanthanh/prettier-config": "^1.0.0",
     "@rollup/plugin-alias": "3.1.5",
     "@rollup/plugin-commonjs": "20.0.0",
     "@rollup/plugin-image": "2.1.1",
@@ -28,7 +29,7 @@
     "@rollup/plugin-node-resolve": "13.0.4",
     "@rollup/plugin-replace": "3.0.0",
     "cssnano": "5.0.8",
-    "esbuild": "0.12.22",
+    "esbuild": "0.12.23",
     "generate-source-map": "^0.0.5",
     "husky": "7.0.2",
     "lint-staged": "11.1.2",
@@ -46,6 +47,7 @@
     "rollup-plugin-postcss": "4.0.1",
     "rollup-plugin-require-context": "^1.0.1",
     "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-visualizer": "^5.5.2",
     "rollup-plugin-vue": "^5.1.9",
     "vue-template-compiler": "^2.6.14"
   },
@@ -58,5 +60,6 @@
       "prettier-package-json  --write",
       "git add"
     ]
-  }
+  },
+  "prettier": "@dangvanthanh/prettier-config"
 }
