@@ -4,23 +4,19 @@
   </a>
 </template>
 
-<script>
-import { defineComponent } from '@vue/composition-api'
-
-export default defineComponent({
-  name: 'AtomLink',
-  props: {
-    link: {
-      type: Object,
-      required: true,
-    },
-  },
-  methods: {
-    onClick() {
-      this.$emit('onClick')
-    },
+<script setup>
+defineProps({
+  link: {
+    type: Object,
+    required: true,
   },
 })
+
+const emit = defineEmits(['onClick'])
+
+const onClick = () => {
+  emit('onClick')
+}
 </script>
 
 <style scoped>

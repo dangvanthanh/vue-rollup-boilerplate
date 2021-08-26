@@ -12,6 +12,7 @@ import livereload from 'rollup-plugin-livereload'
 import filesize from 'rollup-plugin-filesize'
 import requireContext from 'rollup-plugin-require-context'
 import { visualizer } from 'rollup-plugin-visualizer'
+import ScriptSetup from 'unplugin-vue2-script-setup/rollup'
 import postcssImport from 'postcss-import'
 import postcssCustomMedia from 'postcss-custom-media'
 import postcssNested from 'postcss-nested'
@@ -52,6 +53,7 @@ export default {
       browser: true,
     }),
     commonjs(),
+    ScriptSetup(),
     vue({ css: false, needMap: false }),
     replace({
       'process.env.NODE_ENV': production ? '"production"' : '"development"',
@@ -63,7 +65,7 @@ export default {
     }),
     !production &&
       visualizer({
-        open: true
+        open: false,
       }),
     !production &&
       serve({

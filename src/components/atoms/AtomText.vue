@@ -2,15 +2,10 @@
   <p>{{ text }}</p>
 </template>
 
-<script>
-import { defineComponent } from '@vue/composition-api'
-
-export default defineComponent({
-  name: 'AtomText',
-  props: {
-    text: {
-      type: String,
-    },
+<script setup>
+defineProps({
+  text: {
+    type: String,
   },
 })
 </script>

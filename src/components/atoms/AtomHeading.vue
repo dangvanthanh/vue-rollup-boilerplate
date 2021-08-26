@@ -2,16 +2,11 @@
   <h1>{{ text }}</h1>
 </template>
 
-<script>
-import { defineComponent } from '@vue/composition-api'
-
-export default defineComponent({
-  name: 'AtomHeading',
-  props: {
-    text: {
-      type: String,
-      required: true,
-    },
+<script setup>
+defineProps({
+  text: {
+    type: String,
+    required: true,
   },
 })
 </script>
