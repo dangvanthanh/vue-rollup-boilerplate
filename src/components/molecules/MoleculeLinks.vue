@@ -11,19 +11,23 @@
   </div>
 </template>
 
+<script setup>
+import AtomLink from '@/components/atoms/AtomLink.vue'
+
+defineProps({
+  links: {
+    type: Array,
+    required: true,
+  },
+})
+</script>
+
+
 <script>
 import { defineComponent } from '@vue/composition-api'
-import AtomLink from '@/components/atoms/AtomLink.vue'
 
 export default defineComponent({
   name: 'MoleculeLinks',
-  components: { AtomLink },
-  props: {
-    links: {
-      type: Array,
-      required: true,
-    },
-  },
   computed: {
     currentLocale() {
       return this.$i18n.locale

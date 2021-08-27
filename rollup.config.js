@@ -13,22 +13,9 @@ import filesize from 'rollup-plugin-filesize'
 import requireContext from 'rollup-plugin-require-context'
 import { visualizer } from 'rollup-plugin-visualizer'
 import ScriptSetup from 'unplugin-vue2-script-setup/rollup'
-import postcssImport from 'postcss-import'
-import postcssCustomMedia from 'postcss-custom-media'
-import postcssNested from 'postcss-nested'
-import postcssSortMediaQueries from 'postcss-sort-media-queries'
-import cssnano from 'cssnano'
 
 const production = !process.env.ROLLUP_WATCH
 const port = 8080
-
-const postCssPlugins = [
-  postcssImport(),
-  postcssCustomMedia(),
-  postcssNested(),
-  postcssSortMediaQueries(),
-  production && cssnano(),
-]
 
 export default {
   input: 'src/main.js',
@@ -45,7 +32,7 @@ export default {
       entries: [{ find: '@', replacement: __dirname + '/src/' }],
     }),
     image(),
-    postcss({ extract: 'app.css', plugins: postCssPlugins }),
+    postcss({ extract: 'app.css', config: { path: 'postcss.config.js' } }),
     requireContext(),
     nodeResolve({
       jsnext: true,
