@@ -12,7 +12,7 @@ import livereload from 'rollup-plugin-livereload'
 import filesize from 'rollup-plugin-filesize'
 import requireContext from 'rollup-plugin-require-context'
 import { visualizer } from 'rollup-plugin-visualizer'
-import ScriptSetup from 'unplugin-vue2-script-setup/rollup'
+import scriptSetup from 'unplugin-vue2-script-setup/rollup'
 
 const production = !process.env.ROLLUP_WATCH
 const port = 8080
@@ -40,7 +40,7 @@ export default {
       browser: true,
     }),
     commonjs(),
-    ScriptSetup(),
+    scriptSetup(),
     vue({ css: false, needMap: false }),
     replace({
       'process.env.NODE_ENV': production ? '"production"' : '"development"',

@@ -1,14 +1,13 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@dangvanthanh/prettier-config': ^1.0.0
   '@rollup/plugin-alias': 3.1.5
   '@rollup/plugin-commonjs': 20.0.0
   '@rollup/plugin-image': 2.1.1
   '@rollup/plugin-json': ^4.1.0
   '@rollup/plugin-node-resolve': 13.0.4
   '@rollup/plugin-replace': 3.0.0
-  '@vue/composition-api': 1.1.3
+  '@vue/composition-api': 1.1.4
   cssnano: 5.0.8
   esbuild: 0.12.24
   generate-source-map: ^0.0.5
@@ -30,7 +29,7 @@ specifiers:
   rollup-plugin-serve: ^1.1.0
   rollup-plugin-visualizer: ^5.5.2
   rollup-plugin-vue: ^5.1.9
-  unplugin-vue2-script-setup: 0.5.4
+  unplugin-vue2-script-setup: 0.5.5
   vue: ^2.6.14
   vue-i18n: 8.25.0
   vue-router: ^3.5.2
@@ -38,14 +37,13 @@ specifiers:
   vuex: ^3.6.2
 
 dependencies:
-  '@vue/composition-api': 1.1.3_vue@2.6.14
+  '@vue/composition-api': 1.1.4_vue@2.6.14
   vue: 2.6.14
   vue-i18n: 8.25.0
   vue-router: 3.5.2
   vuex: 3.6.2_vue@2.6.14
 
 devDependencies:
-  '@dangvanthanh/prettier-config': 1.0.0
   '@rollup/plugin-alias': 3.1.5_rollup@2.56.3
   '@rollup/plugin-commonjs': 20.0.0_rollup@2.56.3
   '@rollup/plugin-image': 2.1.1_rollup@2.56.3
@@ -73,7 +71,7 @@ devDependencies:
   rollup-plugin-serve: 1.1.0
   rollup-plugin-visualizer: 5.5.2_rollup@2.56.3
   rollup-plugin-vue: 5.1.9_8090cdfb16dbe445f93994824935afd0
-  unplugin-vue2-script-setup: 0.5.4_rollup@2.56.3
+  unplugin-vue2-script-setup: 0.5.5_rollup@2.56.3
   vue-template-compiler: 2.6.14
 
 packages:
@@ -325,10 +323,6 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: true
 
-  /@dangvanthanh/prettier-config/1.0.0:
-    resolution: {integrity: sha512-OzTjrMcoifaOE20dgqJFxvhBEJMNNgjVX/WMHCnrFeNvxskGweIuaMNgZ9Kd3jlDrtyTAJ3wDLfsCBKJUOrf1g==}
-    dev: true
-
   /@npmcli/git/2.1.0:
     resolution: {integrity: sha512-/hBFX/QG1b+N7PZBFs0bi+evgRZcK9nWBxQKZkGoXUT5hJSwl5c4d7y8/hm+NQZRPhQ67RzFaj5UM9YeyKoryw==}
     dependencies:
@@ -550,8 +544,8 @@ packages:
       stylus: 0.54.8
     dev: true
 
-  /@vue/composition-api/1.1.3_vue@2.6.14:
-    resolution: {integrity: sha512-gFcLkHD7SkaoE+i4OhMtv6c/gQeSYxEDDGk4yzF4tZ8h8+7oFNBX8lPUWf9McHGBTcztZNzsIZuwkDVmc0WZlQ==}
+  /@vue/composition-api/1.1.4_vue@2.6.14:
+    resolution: {integrity: sha512-f618a79X0VepQUoZofaAYzaherBuzfIIYah4gQPcwmXgN3oeuGdhO7DY2s3Rjcw7r9yTEh5sQIowbNWy6INGjg==}
     peerDependencies:
       vue: '>= 2.5 < 3'
     dependencies:
@@ -4512,8 +4506,8 @@ packages:
     engines: {node: '>= 10.0.0'}
     dev: true
 
-  /unplugin-vue2-script-setup/0.5.4_rollup@2.56.3:
-    resolution: {integrity: sha512-FUlVu+gK+pgsou/yUlQok6IQaDquiamMtofhuR0vVnStOEh/UssqFQiJ2eZK2tJwmVYdia2elbZDAB3XPRQCRg==}
+  /unplugin-vue2-script-setup/0.5.5_rollup@2.56.3:
+    resolution: {integrity: sha512-Ii1b0yo4D5iOWU4oj7InFIVtB1rQ+/OfFLjB4DCIiwmrCM6bfKXITqcovPcyQFv6iMk9/7MurOJQS1mRgCXe8Q==}
     dependencies:
       '@babel/core': 7.15.0
       '@babel/generator': 7.15.0
@@ -4524,7 +4518,7 @@ packages:
       '@vue/shared': 3.2.6
       htmlparser2: 6.1.0
       magic-string: 0.25.7
-      unplugin: 0.2.2_rollup@2.56.3
+      unplugin: 0.2.6_rollup@2.56.3
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -4532,8 +4526,8 @@ packages:
       - webpack
     dev: true
 
-  /unplugin/0.2.2_rollup@2.56.3:
-    resolution: {integrity: sha512-YB36SWcmoWjpgQqXuqNSUVOKe36bOjJXDFBZAwCpxxMiu+0euYuIw7HQj+IcM7KbQazWJyrbHTBy9jg2RsFHBg==}
+  /unplugin/0.2.6_rollup@2.56.3:
+    resolution: {integrity: sha512-eNDgjSWcDhGMn8W308kYkFP8OkaiiIKtVgTGL+VkhNhzypL1aCRMVZS4U0reqzyls0cTMWLB0sggXBo0Q3XLng==}
     peerDependencies:
       rollup: ^2.50.0
       vite: ^2.3.0
@@ -4547,7 +4541,13 @@ packages:
         optional: true
     dependencies:
       rollup: 2.56.3
+      upath: 2.0.1
       webpack-virtual-modules: 0.4.3
+    dev: true
+
+  /upath/2.0.1:
+    resolution: {integrity: sha512-1uEe95xksV1O0CYKXo8vQvN1JEbtJp7lb7C5U9HMsIp6IVwntkH/oNUzyVNQSd4S1sYk2FpSSW44FqMc8qee5w==}
+    engines: {node: '>=4'}
     dev: true
 
   /uri-js/4.4.1:

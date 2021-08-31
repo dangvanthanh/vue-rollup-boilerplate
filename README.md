@@ -22,6 +22,8 @@ You can generate then [use this template](https://github.com/dangvanthanh/vue-ro
 ```bash
 $ pnpm start
 // or
+$ pnpm dev
+// or
 $ pnpm run serve
 ```
 
@@ -29,6 +31,8 @@ $ pnpm run serve
 
 ```bash
 $ npm start
+// or
+$ npm run dev
 // or
 $ npm run serve
 ```
