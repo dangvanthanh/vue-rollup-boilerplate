@@ -15,7 +15,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 import scriptSetup from 'unplugin-vue2-script-setup/rollup'
 
 const production = !process.env.ROLLUP_WATCH
-const port = 8080
+const port = 3000
 
 export default {
   input: 'src/main.js',
