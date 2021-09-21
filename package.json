@@ -61,6 +61,5 @@
       "prettier-package-json  --write",
       "git add"
     ]
-  },
-  "prettier": "@dangvanthanh/prettier-config"
+  }
 }

@@ -34,6 +34,7 @@ a {
   border-radius: 2rem;
   text-decoration: none;
   min-width: 5rem;
+  position: initial;
 }
 
 a.is-active {
