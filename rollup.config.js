@@ -41,7 +41,15 @@ export default {
     }),
     commonjs(),
     scriptSetup(),
-    vue({ css: false, needMap: false }),
+    vue({
+      css: false,
+      needMap: false,
+      template: {
+        compilerOptions: {
+          isCustomElement: (tag) => tag.includes('-'),
+        },
+      },
+    }),
     replace({
       'process.env.NODE_ENV': production ? '"production"' : '"development"',
       preventAssignment: true,
