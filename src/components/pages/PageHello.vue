@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from '@vue/composition-api'
+import { ref, onMounted } from 'vue'
 import AtomLogo from '@/components/atoms/AtomLogo.vue'
 import AtomHeading from '@/components/atoms/AtomHeading.vue'
 import AtomText from '@/components/atoms/AtomText.vue'
