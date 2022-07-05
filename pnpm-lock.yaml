@@ -599,6 +599,14 @@ packages:
       picomatch: 2.3.0
     dev: true
 
+  /@rollup/pluginutils/4.2.1:
+    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
+    engines: {node: '>= 8.0.0'}
+    dependencies:
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
+    dev: true
+
   /@tootallnate/once/1.1.2:
     resolution: {integrity: sha512-RbzJvlNzmRq5c3O09UipeuXno4tA1FE6ikOjxZK0tuxVv3412l64l5t1W5pj4+rJq9vpkm/kwiR07aZXnsKPxw==}
     engines: {node: '>= 6'}
@@ -2095,8 +2103,8 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /defu/5.0.0:
-    resolution: {integrity: sha512-VHg73EDeRXlu7oYWRmmrNp/nl7QkdXUxkQQKig0Zk8daNmm84AbGoC8Be6/VVLJEKxn12hR0UBmz8O+xQiAPKQ==}
+  /defu/5.0.1:
+    resolution: {integrity: sha512-EPS1carKg+dkEVy3qNTqIdp2qV7mUP08nIsupfwQpz++slCVRw7qbQyWvSTig+kFPwz2XXp5/kIIkH+CwrJKkQ==}
     dev: true
 
   /delayed-stream/1.0.0:
@@ -5586,12 +5594,12 @@ packages:
       '@babel/parser': 7.18.6
       '@babel/traverse': 7.18.6
       '@babel/types': 7.18.7
-      '@rollup/pluginutils': 4.1.1
+      '@rollup/pluginutils': 4.2.1
       '@vue/compiler-core': 3.2.37
       '@vue/composition-api': 1.7.0_vue@2.7.2
       '@vue/ref-transform': 3.2.24
       '@vue/shared': 3.2.37
-      defu: 5.0.0
+      defu: 5.0.1
       htmlparser2: 5.0.1
       magic-string: 0.25.7
       unplugin: 0.2.21_rollup@2.75.7
