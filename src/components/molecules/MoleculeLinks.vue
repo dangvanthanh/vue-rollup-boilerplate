@@ -22,7 +22,6 @@ defineProps({
 })
 </script>
 
-
 <script>
 import { defineComponent } from 'vue'
 
