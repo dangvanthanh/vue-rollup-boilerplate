@@ -13,8 +13,8 @@
     "start": "npm run serve"
   },
   "dependencies": {
-    "@vue/composition-api": "1.7.1",
-    "vue": "^2.7.2",
+    "@vue/composition-api": "1.7.2",
+    "vue": "^2.7.14",
     "vue-i18n": "8.26.5",
     "vue-router": "3.5.3",
     "vuex": "^3.6.2"
@@ -24,23 +24,23 @@
   },
   "devDependencies": {
     "@rollup/plugin-alias": "5.0.0",
-    "@rollup/plugin-commonjs": "25.0.3",
+    "@rollup/plugin-commonjs": "25.0.4",
     "@rollup/plugin-image": "3.0.2",
     "@rollup/plugin-json": "6.0.0",
-    "@rollup/plugin-node-resolve": "15.1.0",
+    "@rollup/plugin-node-resolve": "15.2.1",
     "@rollup/plugin-replace": "5.0.2",
-    "@size-limit/preset-app": "8.2.6",
+    "@size-limit/preset-app": "9.0.0",
     "cssnano": "6.0.1",
-    "esbuild": "0.19.0",
+    "esbuild": "0.19.4",
     "generate-source-map": "^0.0.5",
     "husky": "8.0.3",
     "nano-staged": "^0.8.0",
-    "postcss": "8.4.27",
+    "postcss": "8.4.31",
     "postcss-import": "15.1.0",
     "postcss-nested": "6.0.1",
-    "postcss-preset-env": "9.1.1",
+    "postcss-preset-env": "9.1.4",
     "postcss-sort-media-queries": "5.2.0",
-    "prettier": "3.0.1",
+    "prettier": "3.0.3",
     "prettier-package-json": "2.8.0",
     "rollup": "2.79.1",
     "rollup-plugin-esbuild": "5.0.0",
@@ -51,10 +51,10 @@
     "rollup-plugin-serve": "2.0.2",
     "rollup-plugin-visualizer": "5.9.2",
     "rollup-plugin-vue": "^5.1.9",
-    "size-limit": "8.2.6",
+    "size-limit": "9.0.0",
     "unplugin-vue2-script-setup": "^0.7.3",
     "vue-loader": "17.2.2",
-    "vue-template-compiler": "^2.7.2"
+    "vue-template-compiler": "^2.7.14"
   },
   "nano-staged": {
     "*.{js,json,vue},!dist/*.js": [
