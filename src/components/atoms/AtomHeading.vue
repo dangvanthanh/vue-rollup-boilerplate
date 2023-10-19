@@ -1,7 +1,3 @@
-<template>
-  <h1>{{ text }}</h1>
-</template>
-
 <script setup>
 defineProps({
   text: {
@@ -10,6 +6,10 @@ defineProps({
   },
 })
 </script>
+
+<template>
+  <h1>{{ text }}</h1>
+</template>
 
 <style scoped>
 h1 {

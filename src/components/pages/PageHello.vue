@@ -1,15 +1,3 @@
-<template>
-  <div>
-    <div class="hello">
-      <AtomLogo />
-      <AtomHeading :text="$t('hello')" />
-      <AtomText text="The Progressive JavaScript Framework" />
-      <MoleculeLinks :links="languages" />
-    </div>
-    <canvas ref="canvas" @mousemove="onMouseMove"></canvas>
-  </div>
-</template>
-
 <script setup>
 import { ref, onMounted } from 'vue'
 import AtomLogo from '@/components/atoms/AtomLogo.vue'
@@ -56,6 +44,18 @@ function onMouseMove(event) {
   paint(event)
 }
 </script>
+
+<template>
+  <div>
+    <div class="hello">
+      <AtomLogo />
+      <AtomHeading :text="$t('hello')" />
+      <AtomText text="The Progressive JavaScript Framework" />
+      <MoleculeLinks :links="languages" />
+    </div>
+    <canvas ref="canvas" @mousemove="onMouseMove"></canvas>
+  </div>
+</template>
 
 <style scoped>
 .hello {

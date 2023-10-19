@@ -1,9 +1,3 @@
-<template>
-  <a :href="link.href" @click.prevent="onClick">
-    {{ link.text }}
-  </a>
-</template>
-
 <script setup>
 defineProps({
   link: {
@@ -18,6 +12,12 @@ const onClick = () => {
   emit('onClick')
 }
 </script>
+
+<template>
+  <a :href="link.href" @click.prevent="onClick">
+    {{ link.text }}
+  </a>
+</template>
 
 <style scoped>
 a {

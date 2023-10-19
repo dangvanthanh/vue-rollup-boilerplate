@@ -71,13 +71,13 @@ Atomic design components
 ## Makefile and PNPM
 
 ```shell
-$ time make build and time pnpm build
+$ time make build && time pnpm build
 ```
 
-|          | user  | system | cpu  | total |
-| -------- | ----- | ------ | ---- | ----- |
-| Makefile | 7.17s | 0.73s  | 102% | 7.706 |
-| PNPM     | 7.35s | 0.69s  | 102% | 7.821 |
+|          | user      | system    |
+| -------- | --------- | --------- |
+| Makefile | 2.79 secs | 0.25 secs |
+| PNPM     | 2.80 secs | 0.22 secs |
 
 ## Fork It And Make Your Own
 

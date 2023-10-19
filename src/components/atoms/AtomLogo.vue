@@ -1,5 +1,7 @@
-<template>
-  <img src="@/assets/images/logo.png" />
-</template>
+<script setup>
+import logo from '@/assets/images/logo.png'
+</script>
 
-<script setup></script>
+<template>
+  <img :src="logo" />
+</template>

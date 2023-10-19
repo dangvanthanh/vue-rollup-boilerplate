@@ -1,16 +1,3 @@
-<template>
-  <div>
-    <template v-for="link in links">
-      <AtomLink
-        :link="link"
-        :key="link.value"
-        :class="{ 'is-active': currentLocale === link.value }"
-        @onClick="changeLocale(link.value)"
-      />
-    </template>
-  </div>
-</template>
-
 <script setup>
 import AtomLink from '@/components/atoms/AtomLink.vue'
 
@@ -39,6 +26,19 @@ export default defineComponent({
   },
 })
 </script>
+
+<template>
+  <div>
+    <template v-for="link in links">
+      <AtomLink
+        :link="link"
+        :key="link.value"
+        :class="{ 'is-active': currentLocale === link.value }"
+        @onClick="changeLocale(link.value)"
+      />
+    </template>
+  </div>
+</template>
 
 <style scoped>
 div {
