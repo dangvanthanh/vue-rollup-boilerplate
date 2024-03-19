@@ -5,7 +5,7 @@
   "description": "A simple boilerplate Vue.js using Rollup",
   "author": "",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c --output public",
     "dev": "npm run serve",
     "postinstall": "husky install",
     "serve": "rollup -c -w",
