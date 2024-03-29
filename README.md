@@ -2,7 +2,7 @@
 
 > A simple rollup, [vue-loader](http://vuejs.github.io/vue-loader) and [esbuild](https://github.com/evanw/esbuild) setup for quick prototyping.
 
-Vue 2 is nearing its [End Of Life](https://blog.vuejs.org/2022/03/01/vue-2-eol/). If you're considering upgrading to Vue 3, you might want to explore the [vue-turborepo-boilerplate](https://github.com/dangvanthanh/vue-turborepo-boilerplate). While this boilerplate currently provides robust support for Vue 2
+Vue 2 is nearing its [End Of Life](https://blog.vuejs.org/2022/03/01/vue-2-eol/). If you're considering upgrading to Vue 3, you might want to explore the [nuxt-turborepo-boilerplate](https://github.com/dangvanthanh/nuxt-turborepo-boilerplate) or [vue-turborepo-boilerplate](https://github.com/dangvanthanh/vue-turborepo-boilerplate). While this boilerplate currently provides robust support for Vue 2
 
 ![](screenshot.png)
 
