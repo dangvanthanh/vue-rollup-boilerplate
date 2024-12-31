@@ -38,7 +38,7 @@
     "postcss-sort-media-queries": "5.2.0",
     "prettier": "3.4.2",
     "prettier-package-json": "2.8.0",
-    "rollup": "2.79.1",
+    "rollup": "2.79.2",
     "rollup-plugin-esbuild": "6.1.1",
     "rollup-plugin-filesize": "10.0.0",
     "rollup-plugin-livereload": "^2.0.5",
